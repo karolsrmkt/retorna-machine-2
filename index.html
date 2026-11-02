@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Retorna Machine 2.0 | Projeto Vida na Água — Lixo Zero no Litoral</title>
+  
+  <meta name="description" content="Proposta acadêmica e conceitual de adaptação da Retorna Machine da Ambipar Triciclo para calçadões e orlas marítimas. Tecnologia, inteligência artificial, energia solar e incentivo à reciclagem para proteção da vida marinha (ODS 14)." />
+  <meta name="keywords" content="Retorna Machine 2.0, Vida na Água, ODS 14, reciclagem litoral, sustentabilidade praias, Ambipar Triciclo, Tricoins, logística reversa" />
+  <meta name="author" content="Projeto Acadêmico Vida na Água" />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Retorna Machine 2.0 | Projeto Vida na Água" />
+  <meta property="og:description" content="Mais reciclagem no litoral. Mais vida nos oceanos. Proposta de inovação sustentável para orlas marítimas." />
+  <meta property="og:image" content="images/maq-cenario-1.jpg" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="src/styles/variables.css" />
+  <link rel="stylesheet" href="src/styles/base.css" />
+  <link rel="stylesheet" href="src/styles/components.css" />
+  <link rel="stylesheet" href="src/styles/sections.css" />
+</head>
+<body>
+
+  <!-- ===================================================================
+       ACADEMIC DISCLAIMER TOP BAR
+       =================================================================== -->
+  <aside class="academic-notice-bar" role="complementary" aria-label="Aviso Acadêmico">
+    <span class="academic-badge">Projeto Conceitual Acadêmico</span>
+    <span>Alinhado ao <strong>ODS 14 da ONU — Vida na Água</strong> • Baseado na tecnologia <strong>Ambipar Triciclo</strong></span>
+    <a href="https://retornamachine.eco.br/" target="_blank" rel="noopener noreferrer" class="notice-link">Conheça o Programa Oficial Triciclo &rarr;</a>
+  </aside>
+
+  <!-- ===================================================================
+       HEADER & NAVIGATION
+       =================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+      <a href="#hero" class="site-logo" aria-label="Retorna Machine 2.0 Início">
+        <div class="logo-text-group">
+          <span class="logo-title">RETORNA MACHINE <span class="accent-text">2.0</span></span>
+          <span class="logo-subtitle">Projeto Vida na Água</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav: Centralizada, Fina Moldura, Ocupando a Largura -->
+      <nav class="desktop-nav" aria-label="Navegação Principal">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link is-active">Início</a></li>
+          <li><a href="#maquina" class="nav-link">A Máquina 2.0</a></li>
+          <li><a href="#como-funciona" class="nav-link">Como Funciona</a></li>
+          <li><a href="#tricoins" class="nav-link">Tricoins & Benefícios</a></li>
+          <li><a href="#logistica" class="nav-link">Logística Reversa</a></li>
+          <li><a href="#parcerias" class="nav-link">Seja um Parceiro</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#ods14" class="nav-link">ODS 14</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botão Quero Apoiar Preservado em Estilo e Função -->
+      <button type="button" class="btn btn-primary btn-sm" data-open-partner-modal>Quero Apoiar</button>
+
+      <!-- Mobile Nav Toggle -->
+      <button type="button" class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Abrir menu de navegação">
+        <span data-icon="menu"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Menu Mobile">
+    <div class="drawer-header">
+      <div class="logo-title">RETORNA MACHINE <span class="accent-text">2.0</span></div>
+      <button type="button" class="modal-close-btn" id="closeDrawerBtn" aria-label="Fechar menu">
+        <span data-icon="close"></span>
+      </button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="#hero" class="drawer-link">Início</a></li>
+      <li><a href="#maquina" class="drawer-link">A Máquina 2.0</a></li>
+      <li><a href="#como-funciona" class="drawer-link">Como Funciona</a></li>
+      <li><a href="#tricoins" class="drawer-link">Tricoins & Benefícios</a></li>
+      <li><a href="#logistica" class="drawer-link">Logística Reversa</a></li>
+      <li><a href="#parcerias" class="drawer-link">Seja um Parceiro</a></li>
+      <li><a href="#faq" class="drawer-link">Perguntas Frequentes</a></li>
+      <li><a href="#ods14" class="drawer-link">ODS 14 — Vida na Água</a></li>
+    </ul>
+    <div style="margin-top: auto; padding-top: 1.5rem;">
+      <button type="button" class="btn btn-primary" style="width: 100%;" data-open-partner-modal>Quero Apoiar</button>
+    </div>
+  </aside>
+
+  <!-- ===================================================================
+       HERO SECTION — PRIMEIRA DOBRA (FUNDO SUAVE COM MARCA D'ÁGUA)
+       =================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        
+        <!-- Left Content -->
+        <div class="hero-content fade-up">
+          <div class="hero-badge-wrap">
+            <span class="chip chip-ocean">
+              <span data-icon="wave"></span> Lixo Zero no Litoral
+            </span>
+            <span class="chip chip-green">
+              <span data-icon="sparkles"></span> Proposta Conceitual 2.0
+            </span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="hero-title-main">Retorna Machine 2.0</span>
+          </h1>
+
+          <div class="hero-subtitle">
+            <span class="hero-sub-line">Mais reciclagem no litoral.</span>
+            <span class="hero-sub-line">Mais vida nos oceanos.</span>
+          </div>
+
+          <p class="hero-lead">
+            Uma proposta de inovação sustentável que une tecnologia, recompensas e logística reversa para incentivar o descarte correto de embalagens e contribuir para a preservação da vida marinha.
+          </p>
+
+          <p class="hero-desc">
+            Adaptação conceitual da máquina de reciclagem da Ambipar Triciclo para áreas de orla marítima e calçadões, enfrentando a poluição costeira através de incentivos reais aos cidadãos e turistas.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#maquina" class="btn btn-primary btn-lg">
+              Conheça a Retorna Machine 2.0
+              <span data-icon="arrowRight"></span>
+            </a>
+            <a href="#como-funciona" class="btn btn-secondary btn-lg">
+              Como funciona
+            </a>
+          </div>
+
+          <!-- Specs row -->
+          <div class="hero-specs-row">
+            <div class="hero-spec-item">
+              <span class="hero-spec-value">1,5 kWp</span>
+              <span class="hero-spec-label">Energia Solar Estimada (Simulação)</span>
+            </div>
+            <div class="hero-spec-item">
+              <span class="hero-spec-value">Câmera IA</span>
+              <span class="hero-spec-label">Reconhecimento Óptico Assistido</span>
+            </div>
+            <div class="hero-spec-item">
+              <span class="hero-spec-value">360°</span>
+              <span class="hero-spec-label">Monitoramento Superior do Entorno</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Media Showcase (Protagonist Machine Image on Beach Boardwalk) -->
+        <div class="hero-media-wrap fade-up">
+          <div class="hero-image-frame">
+            <img src="images/maq-cenario-1.jpg" alt="Retorna Machine 2.0 instalada no calçadão de praia com o mar e areia ao fundo" id="heroMainImage" />
+          </div>
+
+          <!-- Top Floating Card -->
+          <div class="hero-floating-card hero-card-top">
+            <div class="floating-icon" data-icon="recycleBinSymbol"></div>
+            <div class="floating-text">
+              <strong>ODS 14 — Vida na Água</strong>
+              <span>Prevenção de resíduos no mar</span>
+            </div>
+          </div>
+
+          <!-- Bottom Floating Card -->
+          <div class="hero-floating-card hero-card-bottom">
+            <div class="floating-icon" style="background: var(--color-primary-light); color: var(--color-primary-dark);" data-icon="coinSparkle"></div>
+            <div class="floating-text">
+              <strong>Sistema Tricoins</strong>
+              <span>Descarte convertido em benefícios</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       SEÇÃO 1 — A MÁQUINA: O QUE É A RETORNA MACHINE 2.0?
+       =================================================================== -->
+  <section class="section section-sand" id="maquina">
+    <div class="container">
+      
+      <div class="section-header fade-up">
+        <span class="chip chip-ocean">Tecnologia & Adaptação Costeira</span>
+        <h2 class="section-title">O que é a Retorna Machine 2.0?</h2>
+        <p class="section-subtitle">
+          Uma proposta de evolução do equipamento consagrado da Ambipar Triciclo, especialmente adaptada para o ambiente litorâneo, combinando resistência climática, inteligência artificial e sustentabilidade energética.
+        </p>
+      </div>
+
+      <!-- Interactive Inspector Box -->
+      <div class="showcase-wrapper fade-up">
+        
+        <!-- Angle Selector Tabs -->
+        <div class="showcase-nav" role="tablist" aria-label="Perspectivas da Máquina">
+          <button type="button" class="showcase-tab is-active" data-view="scenario" role="tab" aria-selected="true">
+            <span data-icon="wave"></span> Vista em Cenário Praiano
+          </button>
+          <button type="button" class="showcase-tab" data-view="front" role="tab" aria-selected="false">
+            <span data-icon="display"></span> Vista Frontal (Interface)
+          </button>
+          <button type="button" class="showcase-tab" data-view="back" role="tab" aria-selected="false">
+            <span data-icon="sun"></span> Vista Traseira (Painel Solar)
+          </button>
+        </div>
+
+        <!-- Stage Box -->
+        <div class="showcase-stage">
+          <div class="showcase-view-container scenario-mode" id="showcaseContainer">
+            <img src="images/maq-cenario-1.jpg" alt="Retorna Machine 2.0 em calçadão" class="showcase-image full-cover" id="showcaseImage" />
+          </div>
+
+          <div class="showcase-details">
+            <span class="chip chip-green view-badge-tag" id="showcaseBadge">Cenário Conceitual</span>
+            <h3 id="showcaseTitle">Instalação Realista em Calçadão de Praia</h3>
+            <p id="showcaseSubtitle" style="color: var(--color-text-muted); font-size: 1.05rem;">
+              Integração visual e ambiental na orla marítima para incentivo direto ao descarte consciente.
+            </p>
+            <ul class="showcase-feature-list" id="showcaseFeatures">
+              <li class="showcase-feature-item">
+                <span data-icon="check"></span>
+                <span>Posicionamento estratégico em áreas de grande fluxo de banhistas e pedestres.</span>
+              </li>
+              <li class="showcase-feature-item">
+                <span data-icon="check"></span>
+                <span>Acessibilidade facilitada para moradores, comerciantes e turistas da orla.</span>
+              </li>
+              <li class="showcase-feature-item">
+                <span data-icon="check"></span>
+                <span>Estética costeira luminosa que convida ao engajamento voluntário da comunidade.</span>
+              </li>
+              <li class="showcase-feature-item">
+                <span data-icon="check"></span>
+                <span>Barreira direta de contenção para evitar que embalagens cheguem à faixa de areia e ao mar.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 6 Technical Components Grid -->
+      <div class="components-grid">
+        
+        <!-- Component 1: Estrutura Galvanizada -->
+        <div class="comp-card fade-up">
+          <div class="comp-header">
+            <div class="card-icon card-icon-navy" data-icon="shield"></div>
+            <div>
+              <h4 class="comp-title">Estrutura de Aço Galvanizado</h4>
+              <span style="font-size: 0.8rem; color: var(--color-text-light);">Uso externo & intempéries</span>
+            </div>
+          </div>
+          <p class="comp-desc">
+            Projetada para suportar alta salinidade e umidade litorânea. A galvanização confere barreira protetora contra oxidação, exigindo revestimento adequado, vistorias e manutenção periódica preventiva.
+          </p>
+          <div class="comp-meta">
+            <strong>Proteção Litorânea:</strong> Revestimento especial contra maresia e corrosão.
+          </div>
+        </div>
+
+        <!-- Component 2: Painel Solar -->
+        <div class="comp-card fade-up">
+          <div class="comp-header">
+            <div class="card-icon card-icon-green" data-icon="sun"></div>
+            <div>
+              <h4 class="comp-title">Painel Solar Complementar</h4>
+              <span style="font-size: 0.8rem; color: var(--color-text-light);">Geração limpa no litoral</span>
+            </div>
+          </div>
+          <p class="comp-desc">
+            Aproveitamento da farta radiação solar praiana para complementar o fornecimento de energia da tela de 43", sensores internos e subsistemas eletrônicos.
+          </p>
+          <div class="comp-meta">
+            <strong>Energia Solar:</strong> 1,5 kWp estimado para apoio à rede e bateria.
+          </div>
+        </div>
+
+        <!-- Component 3: IA Vision -->
+        <div class="comp-card fade-up">
+          <div class="comp-header">
+            <div class="card-icon card-icon-green" data-icon="sparkles"></div>
+            <div>
+              <h4 class="comp-title">Câmera com Inteligência Artificial</h4>
+              <span style="font-size: 0.8rem; color: var(--color-text-light);">Reconhecimento óptico avançado</span>
+            </div>
+          </div>
+          <p class="comp-desc">
+            Auxilia no reconhecimento visual de embalagens quando o código de barras estiver desgastado, desbotado por areia ou ausente, analisando formato, cor, transparência e textura.
+          </p>
+          <div class="comp-meta">
+            <strong>Visão Computacional:</strong> Triagem assistida com segurança e validação.
+          </div>
+        </div>
+
+        <!-- Component 4: Câmera 360 -->
+        <div class="comp-card fade-up">
+          <div class="comp-header">
+            <div class="card-icon card-icon-green" data-icon="eye360"></div>
+            <div>
+              <h4 class="comp-title">Câmera Superior com Visão 360°</h4>
+              <span style="font-size: 0.8rem; color: var(--color-text-light);">Monitoramento e segurança</span>
+            </div>
+          </div>
+          <p class="comp-desc">
+            Instalada no domo superior para monitorar o entorno imediato do equipamento, inibir vandalismo e auxiliar na identificação de ocorrências, em total respeito à legislação de privacidade.
+          </p>
+          <div class="comp-meta">
+            <strong>Segurança Patrimonial:</strong> Vigilância contínua do perímetro da máquina.
+          </div>
+        </div>
+
+        <!-- Component 5: Tela 43" -->
+        <div class="comp-card fade-up">
+          <div class="comp-header">
+            <div class="card-icon card-icon-navy" data-icon="display"></div>
+            <div>
+              <h4 class="comp-title">Tela Lateral de 43 Polegadas</h4>
+              <span style="font-size: 0.8rem; color: var(--color-text-light);">Educação ambiental & ESG</span>
+            </div>
+          </div>
+          <p class="comp-desc">
+            Display digital voltado ao calçadão para exibição de campanhas educativas sobre preservação dos oceanos, avisos de maré/sol e veiculação de marcas patrocinadoras do projeto.
+          </p>
+          <div class="comp-meta">
+            <strong>Comunicação Dinâmica:</strong> Espaço publicitário e de conscientização.
+          </div>
+        </div>
+
+        <!-- Component 6: Base Concreto -->
+        <div class="comp-card fade-up">
+          <div class="comp-header">
+            <div class="card-icon card-icon-sand" data-icon="anchor"></div>
+            <div>
+              <h4 class="comp-title">Base de Concreto e Ancoragem</h4>
+              <span style="font-size: 0.8rem; color: var(--color-text-light);">Estabilidade mecânica externa</span>
+            </div>
+          </div>
+          <p class="comp-desc">
+            Fixação reforçada com chumbadores metálicos dimensionados para o peso total do equipamento, solo arenoso e resistência a rajadas de vento marítimas frequentes na costa.
+          </p>
+          <div class="comp-meta">
+            <strong>Engenharia Civil:</strong> Fixação segura para espaços públicos abertos.
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Solar Energy Simulation Box -->
+      <div class="solar-simulation-box fade-up">
+        <div class="solar-sim-header">
+          <div>
+            <span class="chip chip-ocean" style="background: rgba(117, 207, 192, 0.2); color: var(--color-accent-aqua); margin-bottom: 0.5rem;">
+              Estudo Energético Conceitual
+            </span>
+            <h3>Estimativa Preliminar de Energia Solar</h3>
+          </div>
+          <p>
+            Simulação matemática baseada em índices médios de irradiação solar no litoral paulista para dimensionamento de sistema fotovoltaico autônomo/híbrido.
+          </p>
+        </div>
+
+        <div class="solar-stats-grid">
+          <div class="solar-stat-item">
+            <div class="solar-stat-num">1,5 kWp</div>
+            <div class="solar-stat-label">Potência dos painéis fotovoltaicos considerados</div>
+          </div>
+          <div class="solar-stat-item">
+            <div class="solar-stat-num">5 kWh</div>
+            <div class="solar-stat-label">Capacidade nominal da bateria de armazenamento</div>
+          </div>
+          <div class="solar-stat-item">
+            <div class="solar-stat-num">4,4 kWh</div>
+            <div class="solar-stat-label">Geração média diária estimada no litoral</div>
+          </div>
+          <div class="solar-stat-item">
+            <div class="solar-stat-num">132 kWh</div>
+            <div class="solar-stat-label">Geração média mensal estimada</div>
+          </div>
+          <div class="solar-stat-item">
+            <div class="solar-stat-num">~32 h</div>
+            <div class="solar-stat-label">Autonomia teórica da bateria em ausência de sol</div>
+          </div>
+          <div class="solar-stat-item">
+            <div class="solar-stat-num">R$ 68,40</div>
+            <div class="solar-stat-label">Economia equivalente mensal estimada (tarifa R$ 0,76/kWh)</div>
+          </div>
+        </div>
+
+        <div class="simulation-disclaimer">
+          <span data-icon="alertTriangle"></span>
+          <div>
+            <strong>Ressalva de Validação Técnica:</strong> Esses números constituem uma simulação inicial conceitual. A autonomia e a economia reais dependem do consumo contínuo da tela de 43", câmeras, computador interno, sombreamento do local, temperatura e perdas elétricas. Não se afirma independência total da rede antes de ensaios laboratoriais e protótipo de campo.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       SEÇÃO 2 — COMO FUNCIONA A MÁQUINA?
+       =================================================================== -->
+  <section class="section" id="como-funciona">
+    <div class="container">
+      
+      <div class="section-header fade-up">
+        <span class="chip chip-green">Passo a Passo Simples & Visual</span>
+        <h2 class="section-title">Como a Máquina Funciona?</h2>
+        <p class="section-subtitle">
+          O processo de reciclagem é desenhado para ser intuitivo, rápido e gratificante para moradores, frequentadores e turistas do litoral.
+        </p>
+      </div>
+
+      <!-- 5-Step Timeline Cards: Ícones Profissionais Unificados & Estrutura Equilibrada -->
+      <div class="steps-timeline">
+        
+        <!-- Etapa 1: Lixeira de reciclagem com estrutura vazada/perfurada em tela -->
+        <div class="step-card fade-up">
+          <span class="step-number">01</span>
+          <div class="card-icon card-icon-green" data-icon="recycleBinMesh"></div>
+          <h4 class="step-card-title">Separação</h4>
+          <p class="step-card-text">
+            O usuário traz a embalagem vazia e limpa até a máquina no calçadão, verificando se ela pertence à lista de materiais aceitos.
+          </p>
+        </div>
+
+        <!-- Etapa 2: Scanner Óptico IA -->
+        <div class="step-card fade-up">
+          <span class="step-number">02</span>
+          <div class="card-icon card-icon-green" data-icon="cameraScan"></div>
+          <h4 class="step-card-title">Reconhecimento</h4>
+          <p class="step-card-text">
+            A câmera com inteligência artificial auxilia no reconhecimento óptico por formato, cor e características do material, complementando o leitor de código.
+          </p>
+        </div>
+
+        <!-- Etapa 3: Depósito no Bocal -->
+        <div class="step-card fade-up">
+          <span class="step-number">03</span>
+          <div class="card-icon card-icon-green" data-icon="depositSlot"></div>
+          <h4 class="step-card-title">Depósito</h4>
+          <p class="step-card-text">
+            Após a validação, o bocal de entrada se abre e a embalagem é acomodada no compartimento interno seguro da máquina.
+          </p>
+        </div>
+
+        <!-- Etapa 4: Crédito de Tricoins -->
+        <div class="step-card fade-up">
+          <span class="step-number">04</span>
+          <div class="card-icon card-icon-green" data-icon="tricoinReward"></div>
+          <h4 class="step-card-title">Crédito de Tricoins</h4>
+          <p class="step-card-text">
+            Os pontos digitais são creditados instantaneamente na conta do participante cadastrado no programa Triciclo.
+          </p>
+        </div>
+
+        <!-- Etapa 5: Destinação & Logística Reversa -->
+        <div class="step-card fade-up">
+          <span class="step-number">05</span>
+          <div class="card-icon card-icon-green" data-icon="arrowRightCheck"></div>
+          <h4 class="step-card-title">Destinação Limpa</h4>
+          <p class="step-card-text">
+            Sensores de capacidade avisam a equipe operacional quando a máquina se aproxima do limite para recolhimento e envio à cadeia de reciclagem.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Materials Accepted (Sem Longa Vida, com Ícones Vetoriais Padronizados) -->
+      <div class="materials-section-wrap fade-up">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <h3 style="font-size: 1.8rem; margin-bottom: 0.5rem;">Materiais que Poderão ser Aceitos</h3>
+          <p>
+            Valores de referência publicados para materiais no programa Retorna Machine original. A tabela final da versão 2.0 dependerá da configuração e validação dos mecanismos internos.
+          </p>
+        </div>
+
+        <div class="materials-grid">
+          
+          <div class="material-card">
+            <div class="mat-icon-wrap" data-icon="matPet"></div>
+            <span class="mat-name">Plástico PET</span>
+            <span style="font-size: 0.78rem; color: var(--color-text-light); margin-bottom: 0.5rem;">Garrafas de água e refri</span>
+            <span class="mat-points">10 Tricoins</span>
+          </div>
+
+          <div class="material-card">
+            <div class="mat-icon-wrap" data-icon="matAlum"></div>
+            <span class="mat-name">Alumínio</span>
+            <span style="font-size: 0.78rem; color: var(--color-text-light); margin-bottom: 0.5rem;">Latas de bebidas</span>
+            <span class="mat-points">15 Tricoins</span>
+          </div>
+
+          <div class="material-card">
+            <div class="mat-icon-wrap" data-icon="matSteel"></div>
+            <span class="mat-name">Aço</span>
+            <span style="font-size: 0.78rem; color: var(--color-text-light); margin-bottom: 0.5rem;">Embalagens de aço</span>
+            <span class="mat-points">10 Tricoins</span>
+          </div>
+
+          <div class="material-card">
+            <div class="mat-icon-wrap" data-icon="matGlass"></div>
+            <span class="mat-name">Vidro</span>
+            <span style="font-size: 0.78rem; color: var(--color-text-light); margin-bottom: 0.5rem;">Frascos compatíveis</span>
+            <span class="mat-points">5 Tricoins</span>
+          </div>
+
+          <div class="material-card">
+            <div class="mat-icon-wrap" data-icon="matPppe"></div>
+            <span class="mat-name">Plásticos PP e PE</span>
+            <span style="font-size: 0.78rem; color: var(--color-text-light); margin-bottom: 0.5rem;">Embalagens rígidas</span>
+            <span class="mat-points">10 Tricoins</span>
+          </div>
+
+          <div class="material-card">
+            <div class="mat-icon-wrap" data-icon="matStraw"></div>
+            <span class="mat-name">Canudos</span>
+            <span style="font-size: 0.78rem; color: var(--color-text-light); margin-bottom: 0.5rem;">Compatíveis c/ triagem</span>
+            <span class="mat-points">5 Tricoins</span>
+          </div>
+
+        </div>
+
+        <!-- Interactive Calculator Simulator (Sem Longa Vida) -->
+        <div class="calc-container">
+          <div style="margin-bottom: 1.5rem;">
+            <span class="chip chip-ocean" style="margin-bottom: 0.5rem;">Simulador Interativo</span>
+            <h4 style="font-size: 1.4rem; color: var(--color-navy-900);">Calcule seus Pontos e Recompensas</h4>
+            <p style="font-size: 0.95rem;">
+              Simule a entrega de embalagens recicláveis e veja a conversão em Tricoins e benefícios reais do catálogo da Triciclo.
+            </p>
+          </div>
+
+          <div class="calc-grid">
+            <div class="calc-items-list" id="calcRowsContainer">
+              <!-- Injected by calculator.js -->
+            </div>
+
+            <div class="calc-summary-panel">
+              <span style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; color: #CBD5CE;">Saldo Simulado</span>
+              <div class="calc-total-points" id="calcTotalPoints">0</div>
+              <span style="font-size: 0.9rem; color: var(--color-accent-aqua); font-weight: 600;" id="calcTotalUnits">0 embalagens</span>
+
+              <div class="calc-rewards-preview">
+                <div class="reward-preview-item">
+                  <span>Equivalente em Pix:</span>
+                  <strong id="calcPixValue">R$ 0,00</strong>
+                </div>
+                <div class="reward-preview-item">
+                  <span>Crédito Bilhete Único SP:</span>
+                  <strong id="calcBilheteValue">R$ 0,00</strong>
+                </div>
+                <div class="reward-preview-item">
+                  <span>Desconto Conta de Luz EcoEnel:</span>
+                  <strong id="calcEnelValue">R$ 0,00</strong>
+                </div>
+              </div>
+
+              <div style="font-size: 0.72rem; color: #CBD5CE; margin-top: 1rem; line-height: 1.3;">
+                *Valores de conversão baseados nos índices divulgados no portal oficial Triciclo. Sujeito à disponibilidade no catálogo.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Info Duo: AI Role & Rejection Rules -->
+      <div class="info-duo-grid">
+        
+        <!-- How AI assists -->
+        <div class="card fade-up">
+          <div class="card-icon card-icon-green" data-icon="sparkles"></div>
+          <h4 style="font-size: 1.25rem; margin-bottom: 0.75rem;">O Papel da Inteligência Artificial</h4>
+          <p style="font-size: 0.93rem; margin-bottom: 1rem;">
+            Na Retorna Machine original, a validação é estritamente vinculada a códigos de barras cadastrados. Na versão 2.0, a câmera com IA atua como um <strong>auxílio visual complementar</strong> para reconhecer:
+          </p>
+          <ul style="padding-left: 1.2rem; font-size: 0.9rem; color: var(--color-text-muted); display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1rem;">
+            <li>Formato e dimensões geométricas volumétricas do objeto;</li>
+            <li>Cor e nível de transparência do polímero ou metal;</li>
+            <li>Características textuais e visuais do material;</li>
+            <li>Compatibilidade com as dimensões do mecanismo interno.</li>
+          </ul>
+          <p style="font-size: 0.85rem; color: var(--color-text-light); background: var(--color-sand-50); padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--color-border);">
+            <strong>Segurança na Triagem:</strong> A IA precisará de treinamento e validação empírica. Se o sistema não tiver certeza da classificação, o item é recusado ou direcionado para verificação.
+          </p>
+        </div>
+
+        <!-- Rejection Rules -->
+        <div class="card fade-up">
+          <div class="card-icon card-icon-sand" data-icon="alertTriangle"></div>
+          <h4 style="font-size: 1.25rem; margin-bottom: 0.75rem;">Regras de Aceitação & Descarte Correto</h4>
+          <p style="font-size: 0.93rem; margin-bottom: 1rem;">
+            Para garantir a pureza da triagem e o correto funcionamento do mecanismo interno, a máquina possui travas de recusa automática:
+          </p>
+          <ul style="padding-left: 1.2rem; font-size: 0.9rem; color: var(--color-text-muted); display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1rem;">
+            <li><strong>Embalagens cheias ou com líquidos:</strong> Devem ser esvaziadas antes do descarte para não molhar a eletrônica;</li>
+            <li><strong>Materiais sujos ou contaminados:</strong> Prejudicam a cadeia de reciclagem;</li>
+            <li><strong>Resíduos não cadastrados:</strong> Papéis amassados, bitucas de cigarro, orgânicos e sacolas plásticas;</li>
+            <li><strong>Embalagens amassadas além do reconhecimento:</strong> Se o sistema não puder validar, o item é rejeitado.</li>
+          </ul>
+          <p style="font-size: 0.85rem; color: #9A3412; background: #FFEDD5; padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid #FED7AA;">
+            <strong>Aviso de Uso:</strong> O usuário é orientado em tempo real pela tela sobre o motivo da recusa de qualquer item impróprio.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       SEÇÃO 3 — O QUE SÃO AS TRICOINS?
+       =================================================================== -->
+  <section class="section section-sand" id="tricoins">
+    <div class="container">
+      
+      <div class="section-header fade-up">
+        <span class="chip chip-ocean">Economia Circular & Recompensas</span>
+        <h2 class="section-title">O que são as Tricoins?</h2>
+        <p class="section-subtitle">
+          Tricoins são os pontos digitais do programa de fidelidade ambiental da Ambipar Triciclo. Reciclar no litoral se transforma em benefícios imediatos no seu dia a dia.
+        </p>
+      </div>
+
+      <!-- Cycle Bar -->
+      <div class="rewards-cycle-bar fade-up">
+        <div class="cycle-step">
+          <div class="cycle-step-num">1</div>
+          <span>Entregar Embalagem</span>
+        </div>
+        <div class="cycle-arrow" data-icon="arrowRight"></div>
+        <div class="cycle-step">
+          <div class="cycle-step-num">2</div>
+          <span>Acumular Tricoins</span>
+        </div>
+        <div class="cycle-arrow" data-icon="arrowRight"></div>
+        <div class="cycle-step">
+          <div class="cycle-step-num">3</div>
+          <span>Consultar Catálogo</span>
+        </div>
+        <div class="cycle-arrow" data-icon="arrowRight"></div>
+        <div class="cycle-step">
+          <div class="cycle-step-num">4</div>
+          <span>Resgatar ou Doar</span>
+        </div>
+      </div>
+
+      <!-- Rewards Catalog Matrix -->
+      <div class="rewards-catalog-grid">
+        
+        <!-- Pix -->
+        <div class="reward-card fade-up">
+          <div class="card-icon card-icon-green" data-icon="sparkles"></div>
+          <h4 style="font-size: 1.15rem; color: var(--color-navy-900);">Transferência Pix</h4>
+          <div class="reward-rate">R$ 1,00</div>
+          <span style="font-size: 0.82rem; color: var(--color-text-light); margin-bottom: 0.75rem;">A cada 150 Tricoins</span>
+          <p style="font-size: 0.9rem; color: var(--color-text-muted);">
+            Dinheiro direto na sua conta bancária via chave Pix cadastrada no aplicativo oficial da Triciclo.
+          </p>
+        </div>
+
+        <!-- Bilhete Único -->
+        <div class="reward-card fade-up">
+          <div class="card-icon card-icon-green" data-icon="creditCard"></div>
+          <h4 style="font-size: 1.15rem; color: var(--color-navy-900);">Bilhete Único SP</h4>
+          <div class="reward-rate">R$ 0,35</div>
+          <span style="font-size: 0.82rem; color: var(--color-text-light); margin-bottom: 0.75rem;">A cada 100 Tricoins</span>
+          <p style="font-size: 0.9rem; color: var(--color-text-muted);">
+            Recarga direta para o transporte público de São Paulo, integrando mobilidade urbana e sustentabilidade.
+          </p>
+        </div>
+
+        <!-- EcoEnel -->
+        <div class="reward-card fade-up">
+          <div class="card-icon card-icon-sand" data-icon="sun"></div>
+          <h4 style="font-size: 1.15rem; color: var(--color-navy-900);">Desconto na Conta de Luz</h4>
+          <div class="reward-rate">R$ 0,27</div>
+          <span style="font-size: 0.82rem; color: var(--color-text-light); margin-bottom: 0.75rem;">A cada 100 Tricoins (EcoEnel SP)</span>
+          <p style="font-size: 0.9rem; color: var(--color-text-muted);">
+            Abatimento direto na fatura de energia elétrica residencial cadastrada em concessionárias parceiras.
+          </p>
+        </div>
+
+        <!-- Carteiras Digitais & Doações -->
+        <div class="reward-card fade-up">
+          <div class="card-icon card-icon-navy" data-icon="shield"></div>
+          <h4 style="font-size: 1.15rem; color: var(--color-navy-900);">Parceiros & Doações</h4>
+          <div class="reward-rate">Catálogo Ativo</div>
+          <span style="font-size: 0.82rem; color: var(--color-text-light); margin-bottom: 0.75rem;">Mercado Pago, Uber e ONGs</span>
+          <p style="font-size: 0.9rem; color: var(--color-text-muted);">
+            Opções de créditos digitais ou doação voluntária dos seus pontos para instituições de apoio socioambiental.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Future Coastal Commerce Callout -->
+      <div class="official-sources-callout fade-up">
+        <div>
+          <h4 style="color: var(--color-navy-900); font-size: 1.1rem; margin-bottom: 0.35rem;">
+            Proposta de Parcerias Comerciais no Litoral
+          </h4>
+          <p style="font-size: 0.92rem; color: var(--color-text-muted); max-width: 650px;">
+            A proposta 2.0 prevê a expansão de parcerias com farmácias, quiosques de praia, supermercados e redes de varejo locais para cupons e descontos regionais (estas parcerias são propostas acadêmicas e ainda exigem negociação).
+          </p>
+        </div>
+        <a href="https://retornamachine.eco.br/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+          Consultar Catálogo Oficial Triciclo
+          <span data-icon="arrowUpRight"></span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       SEÇÃO 4 — LOGÍSTICA REVERSA: PARA ONDE VÃO OS MATERIAIS?
+       =================================================================== -->
+  <section class="section" id="logistica">
+    <div class="container">
+      
+      <div class="section-header fade-up">
+        <span class="chip chip-ocean">Ciclo Completo da Reciclagem</span>
+        <h2 class="section-title">Logística Reversa: Para Onde Vão os Materiais?</h2>
+        <p class="section-subtitle">
+          O descarte na praia é apenas o ponto de partida. A logística reversa garante que cada embalagem recolhida retorne como matéria-prima para a indústria, fechando o ciclo da economia circular.
+        </p>
+      </div>
+
+      <!-- 5-Stage Pipeline -->
+      <div class="reverse-pipeline">
+        
+        <div class="pipe-card fade-up">
+          <span class="pipe-step-num">Etapa 01</span>
+          <h4 style="font-size: 1.05rem; margin-bottom: 0.5rem;">Descarte Correto</h4>
+          <p style="font-size: 0.88rem; color: var(--color-text-muted);">
+            O cidadão deposita a embalagem na Retorna Machine 2.0 instalada no calçadão, evitando o descarte na areia.
+          </p>
+        </div>
+
+        <div class="pipe-card fade-up">
+          <span class="pipe-step-num">Etapa 02</span>
+          <h4 style="font-size: 1.05rem; margin-bottom: 0.5rem;">Telemetria & Registro</h4>
+          <p style="font-size: 0.88rem; color: var(--color-text-muted);">
+            O sistema registra o tipo de material, peso e volume acumulado, atualizando a telemetria em nuvem em tempo real.
+          </p>
+        </div>
+
+        <div class="pipe-card fade-up">
+          <span class="pipe-step-num">Etapa 03</span>
+          <h4 style="font-size: 1.05rem; margin-bottom: 0.5rem;">Coleta Roteirizada</h4>
+          <p style="font-size: 0.88rem; color: var(--color-text-muted);">
+            Ao atingir o limite seguro de capacidade, a equipe técnica é acionada para recolher os resíduos de forma otimizada.
+          </p>
+        </div>
+
+        <div class="pipe-card fade-up">
+          <span class="pipe-step-num">Etapa 04</span>
+          <h4 style="font-size: 1.05rem; margin-bottom: 0.5rem;">Triagem & Prensagem</h4>
+          <p style="font-size: 0.88rem; color: var(--color-text-muted);">
+            Os materiais são conferidos, separados por famílias de polímeros/metais e prensados para transporte eficiente.
+          </p>
+        </div>
+
+        <div class="pipe-card fade-up">
+          <span class="pipe-step-num">Etapa 05</span>
+          <h4 style="font-size: 1.05rem; margin-bottom: 0.5rem;">Nova Matéria-Prima</h4>
+          <p style="font-size: 0.88rem; color: var(--color-text-muted);">
+            Encaminhamento a cooperativas e recicladores habilitados para transformação em novas garrafas, latas e produtos.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Circular Economy Showcase Banner -->
+      <div class="circular-economy-banner fade-up">
+        <div>
+          <span class="chip chip-green" style="margin-bottom: 0.75rem;">Economia Circular Aplicada</span>
+          <h3 style="font-size: 1.6rem; color: var(--color-navy-900); margin-bottom: 0.75rem;">
+            Do Calçadão de Volta à Cadeia Produtiva
+          </h3>
+          <p style="color: var(--color-text-muted); font-size: 1rem; line-height: 1.65; margin-bottom: 1.25rem;">
+            A versão 2.0 não apenas retira o resíduo do alcance das marés e do vento marítimo, mas assegura rastreabilidade para as metas de ESG das empresas e municípios. O destino específico dos materiais na operação final dependerá das cooperativas e parceiros formalmente habilitados.
+          </p>
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <span class="chip chip-ocean">Menos plástico no oceano</span>
+            <span class="chip chip-sand">Apoio a cooperativas locais</span>
+            <span class="chip chip-green">Redução de pegada de carbono</span>
+          </div>
+        </div>
+        <div style="background: #FFFFFF; padding: 1.75rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm);">
+          <div style="font-weight: 700; color: var(--color-navy-900); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span data-icon="shield" style="color: var(--color-primary-dark);"></span>
+            Destinação Responsável
+          </div>
+          <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.55;">
+            "A reciclagem efetiva impede que embalagens plásticas se fragmentem em microplásticos no ecossistema marinho, preservando a fauna aquática e a saúde das praias."
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       SEÇÃO 5 — SEJA UM PARCEIRO: PATROCÍNIO E EMPRESAS
+       =================================================================== -->
+  <section class="section section-sand" id="parcerias">
+    <div class="container">
+      
+      <div class="section-header fade-up">
+        <span class="chip chip-green">Visibilidade & Sustentabilidade ESG</span>
+        <h2 class="section-title">Seja um Parceiro: Patrocínio e Publicidade na Tela</h2>
+        <p class="section-subtitle">
+          A tela lateral de 43 polegadas oferece um ponto privilegiado de comunicação no litoral, conectando marcas responsáveis a milhares de frequentadores diários da orla.
+        </p>
+      </div>
+
+      <!-- Commercial Tiers Grid -->
+      <div class="tiers-grid">
+        
+        <!-- Bronze -->
+        <div class="tier-card fade-up">
+          <span class="tier-name">Cota Bronze</span>
+          <div class="tier-price">R$ 400</div>
+          <span class="tier-period">por mês (Simulação Acadêmica)</span>
+          <ul class="tier-features">
+            <li class="tier-feature-item">
+              <span data-icon="check"></span>
+              <span><strong>2 inserções</strong> publicitárias por dia</span>
+            </li>
+            <li class="tier-feature-item">
+              <span data-icon="check"></span>
+              <span>Divulgação básica da marca</span>
+            </li>
+            <li class="tier-feature-item">
+              <span data-icon="check"></span>
+              <span>Exibição na tela de 43 polegadas</span>
+            </li>
+            <li class="tier-feature-item">
+              <span data-icon="check"></span>
+              <span>Selo digital de apoiador sustentável</span>
+            </li>
+          </ul>
+          <button type="button" class="btn btn-secondary" data-open-partner-modal data-tier="Bronze">
+            Escolher Bronze
+          </button>
+        </div>
+
+        <!-- Prata -->
+        <div class="tier-card fade-up">
+          <span class="tier-name">Cota Prata</span>
+          <div class="tier-price">R$ 800</div>
+          <span class="tier-period">por mês (Simulação Acadêmica)</span>
+          <ul class="tier-features">
+            <li class="tier-feature-item">
+              <span data-icon="check"></span>
+              <span><strong>4 inserções</strong> diárias na tela</span>
+            </li>
+            <li class="tier-feature-item">
+              <span data-icon="check"></span>
+              <span>Maior frequência e alcance de público</span>
+            </li>
+            <li class="tier-feature-item">
+              <span data-icon="check"></span>
+              <span>Exibição em horários de pico da orla</span>
+            </li>
+            <li class="tier-feature-item">
+              <span data-icon="check"></span>
+              <span>Associação direta a campanhas do ODS 14</span>
+            </li>
+          </ul>
+          <button type="button" class="btn btn-secondary" data-open-partner-modal data-tier="Prata">
+            Escolher Prata
+          </button>
+        </div>
+
+        <!-- Ouro (Featured) -->
+        <div class="tier-card featured fade-up">
+          <span class="tier-badge">Mais Escolhida</span>
+          <span class="tier-name">Cota Ouro</span>
+          <div class="tier-price" style="color: var(--color-primary-dark);">R$ 1.500</div>
+          <span class="tier-period">por mês (Simulação Acadêmica)</span>
+          <ul class="tier-features">
+            <li class="tier-feature-item">
+              <span data-icon="check"></span>
+              <span><strong>8 inserções</strong> distribuídas ao longo do dia</span>
+            </li>
+            <li class="tier-feature-item">
+              <span data-icon="check"></span>
+              <span>Alta presença visual no calçadão</span>
+            </li>
+            <li class="tier-feature-item">
+              <span data-icon="check"></span>
+              <span>Possibilidade de cupons promocionais</span>
+            </li>
+            <li class="tier-feature-item">
+              <span data-icon="check"></span>
+              <span>Relatório conceitual de impacto gerado</span>
+            </li>
+          </ul>
+          <button type="button" class="btn btn-primary" data-open-partner-modal data-tier="Ouro">
+            Escolher Ouro
+          </button>
+        </div>
+
+        <!-- Master -->
+        <div class="tier-card fade-up">
+          <span class="tier-name">Cota Master</span>
+          <div class="tier-price">R$ 3.000</div>
+          <span class="tier-period">por mês (Simulação Acadêmica)</span>
+          <ul class="tier-features">
+            <li class="tier-feature-item">
+              <span data-icon="check"></span>
+              <span><strong>12 inserções</strong> diárias de destaque</span>
+            </li>
+            <li class="tier-feature-item">
+              <span data-icon="check"></span>
+              <span>Identificação como <strong>Patrocinadora Master</strong></span>
+            </li>
+            <li class="tier-feature-item">
+              <span data-icon="check"></span>
+              <span>Máxima visibilidade de marca na praia</span>
+            </li>
+            <li class="tier-feature-item">
+              <span data-icon="check"></span>
+              <span>Co-branding nas campanhas socioambientais</span>
+            </li>
+          </ul>
+          <button type="button" class="btn btn-secondary" data-open-partner-modal data-tier="Master">
+            Escolher Master
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Academic Disclaimer for Sponsorship -->
+      <div style="background: var(--color-sand-50); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1rem 1.5rem; font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 3.5rem;" class="fade-up">
+        <strong>Nota de Transparência Acadêmica:</strong> Os valores de patrocínio e as frequências de inserção acima são sugestões ilustrativas formuladas para este trabalho acadêmico. Não constituem tabela comercial oficial nem proposta vinculante da Ambipar Triciclo. A implementação real exigirá definição de duração das peças, programação comercial e contratos específicos.
+      </div>
+
+      <!-- Who can sponsor -->
+      <div class="partner-sectors-box fade-up">
+        <h4 style="font-size: 1.25rem; color: var(--color-navy-900); margin-bottom: 0.5rem;">
+          Quem pode apoiar e patrocinar o projeto?
+        </h4>
+        <p style="font-size: 0.95rem; color: var(--color-text-muted);">
+          O patrocinador não precisa atuar diretamente com reciclagem para apoiar a iniciativa. Empresas de diversos segmentos encontram na orla uma plataforma de alto impacto:
+        </p>
+        <div class="sectors-tags">
+          <span class="sector-tag">Farmácias e Redes de Saúde</span>
+          <span class="sector-tag">Supermercados e Varejo</span>
+          <span class="sector-tag">Comércios e Quiosques Locais da Praia</span>
+          <span class="sector-tag">Marcas com Metas de ESG</span>
+          <span class="sector-tag">Empresas de Água, Saneamento e Energia</span>
+          <span class="sector-tag">Setor Hoteleiro e Turismo Sustentável</span>
+        </div>
+      </div>
+
+      <!-- Impact Callout CTA -->
+      <div class="text-center fade-up" style="max-width: 720px; margin: 0 auto;">
+        <h3 style="font-size: 2rem; color: var(--color-navy-900); margin-bottom: 0.75rem;">
+          Sua empresa pode fazer parte dessa transformação.
+        </h3>
+        <p style="font-size: 1.05rem; margin-bottom: 1.5rem;">
+          Conecte sua marca a uma iniciativa que une inovação, reciclagem e preservação da vida marinha. Conheça as possibilidades de patrocínio e futuras parcerias com o Projeto Vida na Água.
+        </p>
+        <button type="button" class="btn btn-primary btn-lg" data-open-partner-modal>
+          Quero ser Parceiro
+          <span data-icon="arrowRight"></span>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       SEÇÃO 6 — PERGUNTAS FREQUENTES (FAQ)
+       =================================================================== -->
+  <section class="section" id="faq">
+    <div class="container">
+      
+      <div class="section-header fade-up">
+        <span class="chip chip-ocean">Esclarecimentos Técnicos & Operacionais</span>
+        <h2 class="section-title">Perguntas Frequentes</h2>
+        <p class="section-subtitle">
+          Tire dúvidas sobre o funcionamento da máquina, reconhecimento por inteligência artificial, pontuação e viabilidade técnica.
+        </p>
+      </div>
+
+      <div class="accordion fade-up" id="faqAccordion">
+        
+        <!-- FAQ 1 (Longa Vida removida conforme requisito) -->
+        <div class="accordion-item">
+          <button type="button" class="accordion-trigger">
+            <span>A máquina aceita qualquer embalagem?</span>
+            <div class="accordion-icon" data-icon="chevronDown"></div>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-inner">
+              <p>
+                Não. A Retorna Machine 2.0 deverá aceitar apenas os materiais definidos e compatíveis com o seu sistema de triagem interno (como PET, latas de alumínio, aço, vidro e plásticos PP/PE). Na máquina original da Triciclo, os materiais aceitos variam conforme a configuração específica de cada ponto. Embalagens sujas, cheias de líquido ou itens não recicláveis são rejeitados.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="accordion-item">
+          <button type="button" class="accordion-trigger">
+            <span>Preciso ter cadastro para receber pontos?</span>
+            <div class="accordion-icon" data-icon="chevronDown"></div>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-inner">
+              <p>
+                Sim. No modelo do programa Triciclo, o participante precisa de uma conta ativa (criada via aplicativo ou site oficial) para acumular suas Tricoins e realizar a troca pelos benefícios disponíveis. A proposta 2.0 prevê integração rápida no display frontal para identificação do participante por CPF, QR Code ou aproximação.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="accordion-item">
+          <button type="button" class="accordion-trigger">
+            <span>A máquina funciona somente com energia solar?</span>
+            <div class="accordion-icon" data-icon="chevronDown"></div>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-inner">
+              <p>
+                Essa é uma possibilidade em estudo preliminar. O funcionamento totalmente desconectado da rede depende do consumo elétrico conjunto da tela de 43 polegadas, câmeras de monitoramento, computador interno, bem como da incidência solar média e do dimensionamento da bateria. Por isso, a proposta é tratada inicialmente como alimentação complementar ou híbrida.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="accordion-item">
+          <button type="button" class="accordion-trigger">
+            <span>O que acontece quando a máquina fica cheia?</span>
+            <div class="accordion-icon" data-icon="chevronDown"></div>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-inner">
+              <p>
+                A proposta prevê sensores de capacidade volumétrica que monitoram o nível de ocupação do compartimento interno. Quando o limite pré-estabelecido é atingido, o sistema bloqueia temporariamente novos depósitos para evitar travamentos e emite um alerta automático à equipe de logística reversa para a realização da coleta programada.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="accordion-item">
+          <button type="button" class="accordion-trigger">
+            <span>A câmera consegue reconhecer qualquer embalagem sem código de barras?</span>
+            <div class="accordion-icon" data-icon="chevronDown"></div>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-inner">
+              <p>
+                Não necessariamente. A visão computacional atua como um recurso de auxílio na identificação, mas dependerá de treinamento robusto com milhares de amostras, validações de campo e regras rígidas de segurança. Em casos de dúvida ou ambiguidade quanto à natureza do polímero, o sistema deve recusar o item para não contaminar o lote reciclável.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 6 -->
+        <div class="accordion-item">
+          <button type="button" class="accordion-trigger">
+            <span>A máquina resolve sozinha a poluição das praias?</span>
+            <div class="accordion-icon" data-icon="chevronDown"></div>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-inner">
+              <p>
+                Não. A Retorna Machine 2.0 é uma ferramenta complementar e catalisadora. O combate efetivo ao lixo marinho exige atuação integrada com a limpeza pública urbana, coleta seletiva municipal, fiscalização, engajamento dos comerciantes da orla e contínua educação ambiental de moradores e turistas.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 7 -->
+        <div class="accordion-item">
+          <button type="button" class="accordion-trigger">
+            <span>Onde a máquina poderá ser instalada?</span>
+            <div class="accordion-icon" data-icon="chevronDown"></div>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-inner">
+              <p>
+                A proposta foca em locais com grande circulação de pessoas no litoral, como calçadões de praias urbanas, pontos próximos a quiosques e acessos à faixa de areia. A orla de Praia Grande, no litoral paulista, é citada no estudo como um exemplo com alto potencial para pilotos, dependendo de autorizações municipais e análises técnicas de viabilidade.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       SEÇÃO 7 — O PROBLEMA AMBIENTAL E O ODS 14 (VIDA NA ÁGUA)
+       =================================================================== -->
+  <section class="section section-sand" id="ods14">
+    <div class="container">
+      
+      <div class="ods-grid">
+        
+        <div class="fade-up">
+          <div class="ods-card-badge">
+            <div class="ods-num">14</div>
+            <div>
+              <strong style="display: block; font-size: 1.15rem; letter-spacing: -0.01em;">ODS 14: Vida na Água</strong>
+              <span style="font-size: 0.88rem; opacity: 0.9;">Objetivo de Desenvolvimento Sustentável da ONU</span>
+            </div>
+          </div>
+
+          <h2 style="font-size: 2.2rem; color: var(--color-navy-900); margin-bottom: 1rem;">
+            Conservar e Usar de Forma Sustentável os Oceanos
+          </h2>
+
+          <p style="margin-bottom: 1rem;">
+            O descarte inadequado de resíduos em áreas costeiras alimenta um dos maiores desafios ecológicos do planeta: a chegada maciça de plásticos ao oceano, que afeta corais, peixes, tartarugas e aves marinhas.
+          </p>
+
+          <p style="margin-bottom: 1.5rem;">
+            A Retorna Machine 2.0 atua diretamente na <strong>prevenção na fonte</strong>, transformando o calçadão em uma barreira ativa para que a embalagem seja capturada antes de ser levada pelas chuvas ou pelo vento até a praia.
+          </p>
+
+          <!-- Real Case Study: Praia Grande Réveillon 2026 -->
+          <div class="ods-case-study">
+            <span style="font-size: 0.78rem; font-weight: 700; color: var(--color-primary-dark); text-transform: uppercase; letter-spacing: 0.05em;">
+              Dado Oficial • Município de Praia Grande
+            </span>
+            <div class="case-metric">638,20 toneladas</div>
+            <p style="font-size: 0.88rem; color: var(--color-text-muted); margin-top: 0.35rem;">
+              Volume total de resíduos urbanos recolhidos pela Prefeitura na orla de 22,5 km no dia 1º de janeiro de 2026, após a operação de limpeza do Réveillon. <em>(Dado referente ao conjunto geral de resíduos daquela operação urbana específica).</em>
+            </p>
+          </div>
+        </div>
+
+        <div class="fade-up">
+          <div class="card" style="padding: 2rem;">
+            <div class="card-icon card-icon-green" data-icon="wave"></div>
+            <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem;">Métricas para Avaliação de um Projeto-Piloto</h3>
+            <p style="font-size: 0.92rem; color: var(--color-text-muted); margin-bottom: 1rem;">
+              Para que o impacto ambiental da versão 2.0 seja mensurado com rigor científico em vez de porcentagens sem comprovação, os seguintes indicadores foram planejados:
+            </p>
+
+            <div class="future-kpis-list">
+              <div class="future-kpi-item">
+                <strong style="display: block; color: var(--color-navy-900);">Volume Total</strong>
+                <span>Quantidade exata de embalagens recolhidas por máquina.</span>
+              </div>
+              <div class="future-kpi-item">
+                <strong style="display: block; color: var(--color-navy-900);">Massa por Tipo</strong>
+                <span>Peso aferido de PET, alumínio, aço, vidro e plásticos PP/PE.</span>
+              </div>
+              <div class="future-kpi-item">
+                <strong style="display: block; color: var(--color-navy-900);">Adesão Social</strong>
+                <span>Número de participantes únicos cadastrados e engajados.</span>
+              </div>
+              <div class="future-kpi-item">
+                <strong style="display: block; color: var(--color-navy-900);">Taxa de Retorno</strong>
+                <span>Volume de resíduos efetivamente reintegrados à reciclagem.</span>
+              </div>
+            </div>
+
+            <div style="margin-top: 1.5rem; padding: 1rem; background: var(--color-sand-50); border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: 0.85rem; color: var(--color-text-muted);">
+              <strong>Compromisso Científico:</strong> A divulgação de resultados de redução de poluição deve ser sempre pautada em dados aferidos em campo após a entrada em operação.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       FOOTER (FUNDO AREIA QUENTE & SELO ODS 14 VIDA NA ÁGUA)
+       =================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-grid">
+        
+        <div>
+          <div class="logo-title" style="color: var(--color-navy-900); margin-bottom: 0.75rem;">
+            RETORNA MACHINE <span style="color: var(--color-primary-dark);">2.0</span>
+          </div>
+          <p style="font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 1.25rem;">
+            Projeto Vida na Água — Lixo Zero no Litoral.<br />
+            Proposta acadêmica e conceitual de adaptação tecnológica da máquina de reciclagem da Ambipar Triciclo para áreas litorâneas.
+          </p>
+          <!-- Selo ODS 14 ajustado conforme requisito 9: "ODS 14 - Projeto Vida na Água" -->
+          <span class="chip chip-ocean" style="background: var(--color-primary-light); color: var(--color-primary-dark); border-color: var(--color-primary);">
+            ODS 14 — Projeto Vida na Água
+          </span>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navegação</h4>
+          <ul class="footer-links">
+            <li><a href="#hero" class="footer-link">Início</a></li>
+            <li><a href="#maquina" class="footer-link">A Máquina 2.0</a></li>
+            <li><a href="#como-funciona" class="footer-link">Como Funciona</a></li>
+            <li><a href="#tricoins" class="footer-link">Tricoins e Benefícios</a></li>
+            <li><a href="#logistica" class="footer-link">Logística Reversa</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Institucional</h4>
+          <ul class="footer-links">
+            <li><a href="#parcerias" class="footer-link">Seja um Parceiro</a></li>
+            <li><a href="#faq" class="footer-link">Perguntas Frequentes</a></li>
+            <li><a href="#ods14" class="footer-link">Compromisso ODS 14</a></li>
+            <li><a href="https://retornamachine.eco.br/" target="_blank" rel="noopener noreferrer" class="footer-link">Retorna Machine Oficial &nearr;</a></li>
+            <li><a href="https://triciclo.eco.br/" target="_blank" rel="noopener noreferrer" class="footer-link">Ambipar Triciclo &nearr;</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Projeto Acadêmico</h4>
+          <p style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 1rem;">
+            Este site foi desenvolvido com finalidade acadêmica e de demonstração tecnológica, não possuindo vínculo comercial direto ou aprovação formal da Ambipar Triciclo.
+          </p>
+          <button type="button" class="btn btn-outline-primary btn-sm" data-open-partner-modal>
+            Contato Demonstrativo
+          </button>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Projeto Vida na Água • Retorna Machine 2.0. Todos os direitos acadêmicos reservados.
+        </div>
+        <div style="color: var(--color-text-muted);">
+          Preservar o litoral é cuidar da vida no planeta.
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ===================================================================
+       PARTNERSHIP DEMO MODAL
+       =================================================================== -->
+  <div class="modal-overlay" id="partnerModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      
+      <button type="button" class="modal-close-btn" id="closePartnerModal" aria-label="Fechar janela">
+        <span data-icon="close"></span>
+      </button>
+
+      <div style="margin-bottom: 1.5rem;">
+        <span class="chip chip-ocean" style="margin-bottom: 0.4rem;">Simulação de Parceria</span>
+        <h3 id="modalTitle" style="font-size: 1.5rem; color: var(--color-navy-900);">Quero Apoiar o Projeto</h3>
+        <p style="font-size: 0.92rem; color: var(--color-text-muted);">
+          Preencha seus dados para simular o interesse de patrocínio na tela de 43" ou parceria socioambiental.
+        </p>
+      </div>
+
+      <!-- Demo Submission Form -->
+      <form id="partnerDemoForm">
+        <div class="form-group">
+          <label class="form-label" for="partnerName">Nome Completo *</label>
+          <input type="text" id="partnerName" class="form-control" placeholder="Seu nome ou representante" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="partnerCompany">Empresa ou Instituição</label>
+          <input type="text" id="partnerCompany" class="form-control" placeholder="Nome da sua marca ou organização" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="partnerEmail">E-mail Profissional *</label>
+          <input type="email" id="partnerEmail" class="form-control" placeholder="contato@empresa.com.br" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="partnerTierSelect">Cota de Patrocínio / Interesse</label>
+          <select id="partnerTierSelect" class="form-control">
+            <option value="Bronze">Cota Bronze (R$ 400/mês — 2 inserções/dia)</option>
+            <option value="Prata">Cota Prata (R$ 800/mês — 4 inserções/dia)</option>
+            <option value="Ouro" selected>Cota Ouro (R$ 1.500/mês — 8 inserções/dia)</option>
+            <option value="Master">Cota Master (R$ 3.000/mês — 12 inserções/dia)</option>
+            <option value="ComercioLocal">Parceria Comercial (Cupons / Descontos no Litoral)</option>
+            <option value="ApoioInstitucional">Apoio Institucional / Acadêmico</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="partnerMessage">Mensagem ou Observação</label>
+          <textarea id="partnerMessage" class="form-control" placeholder="Conte-nos como gostaria de colaborar ou tirar dúvidas sobre o projeto..."></textarea>
+        </div>
+
+        <div style="margin-top: 1.5rem;">
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            Enviar Proposta Demonstrativa
+          </button>
+        </div>
+
+        <div style="font-size: 0.78rem; color: var(--color-text-light); text-align: center; margin-top: 0.75rem;">
+          *Formulário de demonstração acadêmica. Os dados são salvos localmente no navegador para avaliação.
+        </div>
+      </form>
+
+      <!-- Success Feedback Box (Hidden initially) -->
+      <div id="modalSuccessBox" style="display: none; text-align: center; padding: 1.5rem 0;">
+        <div style="width: 64px; height: 64px; border-radius: 50%; background: var(--color-primary-light); color: var(--color-primary-dark); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem;">
+          <span data-icon="check" style="transform: scale(1.6);"></span>
+        </div>
+        <h4 style="font-size: 1.4rem; color: var(--color-navy-900); margin-bottom: 0.5rem;">
+          Proposta Demonstrativa Registrada!
+        </h4>
+        <p class="demo-success-lead" style="font-size: 0.95rem; color: var(--color-text-muted); margin-bottom: 1.5rem;">
+          Sua manifestação de interesse foi registrada com sucesso nesta demonstração acadêmica.
+        </p>
+
+        <div style="background: var(--color-sand-50); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1rem; font-size: 0.85rem; color: var(--color-text-muted); text-align: left; margin-bottom: 1.5rem;">
+          <strong>Nota de Implementação Técnica:</strong> Em um ambiente de produção comercial, este formulário pode ser integrado a uma API REST, serviço de e-mail (como SendGrid/Formspree) ou CRM de captação de patrocínio. Nesta versão portátil, o registro foi gravado com segurança no <code>localStorage</code> do seu navegador para auditoria dos professores e avaliadores.
+        </div>
+
+        <button type="button" class="btn btn-secondary" id="modalResetBtn">
+          Nova Simulação
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script type="module" src="src/scripts/main.js"></script>
+</body>
+</html>

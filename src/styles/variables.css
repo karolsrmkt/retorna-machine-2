@@ -1,0 +1,79 @@
+/* ===================================================================
+   PROJETO VIDA NA ÁGUA — RETORNA MACHINE 2.0
+   Design Tokens & Variables: Verde-Água & Areia Costeira
+   =================================================================== */
+
+:root {
+  /* Color Palette — Natural Coastal: Verde-Água & Areia de Praia */
+  --color-primary: #5CBDAE;          /* Verde-Água Principal */
+  --color-primary-hover: #48A99A;
+  --color-primary-dark: #246D62;    /* Verde-Água Escuro para alto contraste */
+  --color-primary-light: #EBF7F5;   /* Verde-Água Suave */
+  --color-primary-glow: rgba(92, 189, 174, 0.28);
+  --color-accent-aqua: #75CFC0;     /* Verde-Água Vibrante */
+
+  /* Tons de Areia (Sand & Shoreline) */
+  --color-sand-50: #FAF8F5;         /* Areia claríssima de fundo */
+  --color-sand-100: #F6F0E3;        /* Bege-areia referência */
+  --color-sand-200: #EDE5D5;        /* Bege-areia intermediário */
+  --color-sand-300: #DFD4BF;        /* Bege-areia para divisórias */
+  --color-sand-400: #C8BA9F;
+  --color-sand-dark: #3F3728;       /* Texto em fundos areia */
+  
+  --color-bg-base: #FFFFFF;
+  --color-bg-surface: #FAF8F5;
+  --color-bg-subtle: #F6F0E3;
+  
+  /* Tipografia & Contrastes Neutros */
+  --color-navy-900: #142F2B;        /* Verde-profundo costeiro para títulos de alto contraste */
+  --color-navy-800: #1B3F3A;
+  --color-navy-700: #26554E;
+  
+  --color-text-main: #1A2E2B;       /* Texto principal com legibilidade máxima */
+  --color-text-muted: #4A635F;      /* Texto secundário */
+  --color-text-light: #6E8783;
+  --color-text-inverse: #FFFFFF;
+
+  --color-border: #E5DDD0;          /* Bordas em tom de areia suave */
+  --color-border-hover: #75CFC0;
+  --color-border-focus: #5CBDAE;
+
+  --color-gold: #C27803;
+  --color-gold-light: #FEF3C7;
+  --color-success: #10B981;
+  --color-danger: #EF4444;
+
+  /* Typography */
+  --font-heading: 'Outfit', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Elevation & Shadows */
+  --shadow-sm: 0 1px 3px rgba(20, 47, 43, 0.05), 0 1px 2px rgba(20, 47, 43, 0.03);
+  --shadow-md: 0 4px 14px -2px rgba(20, 47, 43, 0.07), 0 2px 6px -1px rgba(20, 47, 43, 0.04);
+  --shadow-lg: 0 12px 30px -4px rgba(20, 47, 43, 0.09), 0 4px 12px -2px rgba(20, 47, 43, 0.04);
+  --shadow-xl: 0 20px 40px -6px rgba(20, 47, 43, 0.11), 0 8px 20px -4px rgba(20, 47, 43, 0.05);
+  --shadow-glow: 0 0 25px rgba(92, 189, 174, 0.35);
+
+  /* Glassmorphism */
+  --glass-bg: rgba(255, 255, 255, 0.92);
+  --glass-border: rgba(235, 247, 245, 0.8);
+  --glass-blur: blur(14px);
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-pill: 9999px;
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 250ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 400ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Layout */
+  --max-width: 1320px;
+  --header-height: 70px;
+  --banner-height: 36px;
+}
